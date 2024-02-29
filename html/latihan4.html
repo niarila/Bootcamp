@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+      body {
+        display: flex;
+      }
+      body > div {
+        flex-grow: 1 ;
+      }
+      .sidebar {
+        background-color: rgb(19, 218, 95);
+        height: 100vh;
+      }
+      .navbar > ul {
+        display: flex;
+        list-style: none;
+      }
+      .navbar {
+        background-color: rgb(148, 141, 141);
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        height: 50px;
+      }
+      .navbar > ul > li {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">sidebar</aside>
+    <div>
+      <nav class="navbar">
+        <ul>
+          <li>home</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+      <main style="overflow: auto; height: calc( 100vh - 50px);">
+        <section style="height: 100vh;">content</section>
+        <section style="height: 100vh;">content</section>
+        <section style="height: 100vh;">content</section>
+      </main>
+    </div>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display</title>
+    <style>
+        .sembunyikan {
+            display: none;
+        }
+        .block > section {
+            display: block;
+            background-color: red;
+        }
+        .inline > section {
+            display: inline;
+            padding: 10px;
+            background-color: red;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="sembunyikan">hiden</div>
+    <div class="block">
+        <section>1</section>
+        <section>1</section>
+        <section>1</section>
+        <section>1</section>
+    </div>
+    <br>
+    <div class="inline">
+        <section>1</section>
+        <section>1</section>
+        <section>arila</section>
+        <section>1</section>
+    </div>
+    <div class="flex">
+        <section>
+            ini flex
+        </section>
+        <section>
+            ini flex
+        </section>
+    </div>
+</body>
+</html>

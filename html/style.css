@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+.box-aqua {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    border: solid 10px red;
+}
+
+#css-2 {
+    color: rgb(226, 153, 43);
+}
+
+#text-white {
+    color: white;
+}
+
+.parent > .child {
+    background-color: brown;
+}
+
+div p {
+    background-color: blue;
+}
